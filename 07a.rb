@@ -39,7 +39,7 @@ previous_possible_containers = Set.new
 # Initial scan
 current_possible_containers = scan_for_possible_containers(bag_descriptions, previous_possible_containers)
 
-# Keep iterating until all possible choices are exhuasted
+# Keep iterating until all possible choices are exhausted
 until previous_possible_containers == current_possible_containers
   previous_possible_containers = current_possible_containers
   current_possible_containers = scan_for_possible_containers(bag_descriptions, previous_possible_containers)
